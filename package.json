@@ -1,5 +1,5 @@
 {
-  "name": "passport",
+  "name": "passport-restify-node",
   "version": "0.4.0",
   "description": "Simple, unobtrusive authentication for Node.js.",
   "keywords": [

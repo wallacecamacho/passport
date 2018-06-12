@@ -12,7 +12,7 @@ describe('middleware/authenticate', function() {
     function Strategy() {
     }
     Strategy.prototype.authenticate = function(req) {
-      this.redirect('http://www.example.com/idp');
+      this.send('http://www.example.com/idp');
     };
     
     var passport = new Passport();
@@ -47,7 +47,7 @@ describe('middleware/authenticate', function() {
     function Strategy() {
     }
     Strategy.prototype.authenticate = function(req) {
-      this.redirect('http://www.example.com/idp', 303);
+      this.send('http://www.example.com/idp', 303);
     };
     
     var passport = new Passport();
@@ -82,7 +82,7 @@ describe('middleware/authenticate', function() {
     function Strategy() {
     }
     Strategy.prototype.authenticate = function(req) {
-      this.redirect('http://www.example.com/idp');
+      this.send('http://www.example.com/idp');
     };
     
     var passport = new Passport();
@@ -116,7 +116,7 @@ describe('middleware/authenticate', function() {
     function Strategy() {
     }
     Strategy.prototype.authenticate = function(req) {
-      this.redirect('http://www.example.com/idp', 303);
+      this.send('http://www.example.com/idp', 303);
     };
     
     var passport = new Passport();

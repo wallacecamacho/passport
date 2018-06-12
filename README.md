@@ -106,10 +106,10 @@ Passport provides an `authenticate()` function, which is used as route
 middleware to authenticate requests.
 
 ```javascript
-app.post('/login', 
+app.post('/login',
   passport.authenticate('local', { failureRedirect: '/login' }),
   function(req, res) {
-    res.redirect('/');
+    res.send('/');
   });
 ```
 
